@@ -1,0 +1,51 @@
+#header{
+	text-align: left;
+	color: black;
+	font-family: cursive;
+	position: fixed;
+	margin: -130px 0px 0px 50px;
+	font-size: 50px;
+}
+
+.sign{
+	position: fixed;
+	margin:-10px 0px 0px 40px;
+	background-repeat: no-repeat;
+}
+
+.landscape{
+	margin: -10px 0px 0px -10px;
+}
+.aboutMe{
+	text-align: center;
+	color: Red;
+	font-size: 50px;
+	margin: 100px 0px 0px 00px;
+}
+
+/* Nav Bar */
+
+.nav ul{
+	list-style-type: none;
+	margin: 7%;
+	margin-top: -70;
+	padding: 0;
+	overflow: hidden;
+	background-color:  transparent;
+}
+
+.nav li{
+	float: bottom;
+	margin-top: 30;
+	background-image: url("../img/sign2.jpg");
+	background-size: 100% 100%;
+	width: 130px;
+	height: 70px;
+}
+
+.nav li a{
+	display: inline-black;
+	color: blue;
+	padding: 28px 30px;
+	text-decoration: none;
+}
