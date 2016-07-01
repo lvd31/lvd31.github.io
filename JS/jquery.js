@@ -59,6 +59,8 @@ $(document).ready(function(){
        $(".callout3").slideDown(2000);
        $(".callout4").slideDown(2000);
        $("#portfolio").slideDown(2000);
+       start = 1;
+       restart = 0;
     } else {
       num1 = 0;
       num2 = 0;
