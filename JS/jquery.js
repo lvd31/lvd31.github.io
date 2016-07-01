@@ -30,6 +30,7 @@ var num2 = 0;
 var num3 = 0;
 var num4 = 0;
 var start = 1;
+var restart = 0;
 
 $(document).ready(function(){
   $("#1_2").click(function(){
@@ -47,6 +48,17 @@ $(document).ready(function(){
     if(start === 1 && num2 === 1){
       num1 = 1;
      
+    } else if (restart === 1){
+    	$("#sidebar-wrapper").fadeIn();
+      $("#menu-close").fadeIn();
+       $("#top").slideDown(2000);
+       $("#about").slideDown(2000);
+       $("#services").slideDown(2000);
+       $(".callout").slideDown(2000);
+       $(".callout2").slideDown(2000);
+       $(".callout3").slideDown(2000);
+       $(".callout4").slideDown(2000);
+       $("#portfolio").slideDown(2000);
     } else {
       num1 = 0;
       num2 = 0;
@@ -69,7 +81,9 @@ $(document).ready(function(){
        $(".callout3").slideUp(2000);
        $(".callout4").slideUp(2000);
        $("#portfolio").slideUp(2000);
-      
+       restart = 1;
+
+
 
 
       
