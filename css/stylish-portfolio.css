@@ -236,6 +236,7 @@ hr.small {
     border-radius: 15px;
     width: 400px;
     height: 600px;
+    box-shadow: 0 0 16px 2px rgba(0,0,0,0.8);
 }
 #underline{
     width: 100%;
@@ -260,7 +261,7 @@ p.big {
 /* Services */
 
 .services {
-    padding: 30px 0;
+    padding: 20px 0;
     background-color: rgb(81, 71, 69);
 }
 #hobbiesTitle{
@@ -292,29 +293,71 @@ p.big {
     background-size: 100% 100%;
     
 }
+.callout2 {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/callout2.jpg) no-repeat center center scroll;
+    background-size: 100% 100%;
+    position: relative;
+    margin: -400px 0px 0px 0px;
+}
+.callout3 {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/callout3.jpg) no-repeat center center scroll;
+    background-size: 100% 100%;
+    position: relative;
+    margin: -400px 0px 0px 0px;
+}
+.callout4 {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/callout4.jpg) no-repeat center center scroll;
+    background-size: 100% 100%;
+    position: relative;
+    margin: -400px 0px 0px 0px;
+    
+}
+
 
 /* Slider Stuff */
 .posOfImg{
     width: 100%
 }
 
-
+#jssor_1{
+    box-shadow: 0 0 16px 2px rgba(0,0,0,0.8);
+}
 /* Portfolio */
 
 .portfolio {
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .portfolio-item {
     margin-bottom: 30px;
+    padding: 20px;
+    
 }
 
 .img-portfolio {
     margin: 0 auto;
+    padding: 10px;
+    box-shadow: 0 0 16px 2px rgba(0,0,0,0.8);
+    
+    
 }
 
 .img-portfolio:hover {
-    opacity: 0.8;
+    opacity: 0.5;
+    transform: scale(1.02,1.02);
+    
 }
 #projectTitle{
     color: red;
@@ -328,11 +371,24 @@ p.big {
     font-size: 50px;
     font-family: 'Oswald', sans-serif;
 }
+.projectTitles{
+    position: absolute;
+    left: 150px;
+    top: -60px;
+    color: red;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    padding: 5px;
+    border: 2px solid black;
+    
 
-/* Call to Action */
+}
+/* ou to Action */
 
 .call-to-action {
-    padding: 50px 0;
+    padding: 0px 0;
 }
 
 .call-to-action .btn {
@@ -355,4 +411,71 @@ p.big {
 
 footer {
     padding: 100px 0;
+}
+
+
+/* sliding text */
+
+.myfirst-pen  
+{
+  background:#9ab7d4;
+  border-radius:25px;
+  height:50px;    
+  width: 100%;
+  box-shadow:4px 10px 12px black;
+  color:white;
+  text-shadow:5px 5px 10px black;
+  padding-left: 10px;
+  padding-right: 10px;
+ font-family: 'Bangers', cursive;
+ background-position: center;
+}
+
+.nameTag{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+}
+
+/* code */
+
+button{
+  font-size: 50px;
+  box-shadow:4px 10px 12px black;
+  padding: 10px; 
+}
+td{
+  padding: 10px;
+}
+
+
+
+#codeNum1{
+    position: absolute;
+    margin: 290px 0px 0px 20px;
+    font-size: 30px;
+    color: white;
+}
+#codeNum2{
+    position: absolute;
+    margin: 680px 0px 0px -190px;
+    font-size: 30px;
+    color: black;
+}
+#codeNum3{
+    position: absolute;
+    margin: 750px 0px 0px -190px;
+    font-size: 30px;
+    color: white;
+}
+#codeNum4{
+    position: absolute;
+    margin: 0px 0px 0px 20px;
+    font-size: 30px;
+    color: black;
+}
+#codeNum5{
+    position: absolute;
+    margin: 0px 0px 0px -300px;
+    font-size: 30px;
+    color: black;
 }

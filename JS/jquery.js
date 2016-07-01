@@ -5,8 +5,102 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
 
 
 $(document).ready(function(){
+	
 	$(".callout").click(function(){
 		$(".callout").slideUp(2000);
 	});
+
+	$(".callout2").click(function(){
+		$(".callout2").hide();
+	});
+
+	$(".callout3").click(function(){
+		$(".callout3").hide("slow","swing");
+	});
+
+	$(".callout4").click(function(){
+		$(".callout4").fadeOut(2000);
+	});
+
+
+
+
+	var num1 = 0;
+var num2 = 0;
+var num3 = 0;
+var num4 = 0;
+var start = 1;
+
+$(document).ready(function(){
+  $("#1_2").click(function(){
+    if(start === 1){
+      num2 = 1;
+     
+    } else {
+      num1 = 0;
+      num2 = 0;
+      num3 = 0;
+      num4 = 0;
+    }
+  });
+  $("#1_1").click(function(){
+    if(start === 1 && num2 === 1){
+      num1 = 1;
+     
+    } else {
+      num1 = 0;
+      num2 = 0;
+      num3 = 0;
+      num4 = 0;
+    }
+  });
+  $("#2_2").click(function(){
+    if(start === 1 && num2 === 1 && num1 === 1){
+      num4 = 1;
+      
+    } else if (start === 0 && num2 === 1 && num1 === 1 && num3 === 1 && num4 === 1){
+      $("#sidebar-wrapper").fadeOut();
+      $("#menu-close").fadeOut();
+       $("#top").slideUp(2000);
+       $("#about").slideUp(2000);
+       $("#services").slideUp(2000);
+       $(".callout").slideUp(2000);
+       $(".callout2").slideUp(2000);
+       $(".callout3").slideUp(2000);
+       $(".callout4").slideUp(2000);
+       $("#portfolio").slideUp(2000);
+      
+
+
+      
+    }  else {
+      num1 = 0;
+      num2 = 0;
+      num3 = 0;
+      num4 = 0;
+    }
+  });
+  $("#2_1").click(function(){
+    if(start === 1 && num2 === 1 && num1 === 1 && num4 === 1){
+      num3 = 1;
+      start = 0;
+    } else {
+      num1 = 0;
+      num2 = 0;
+      num3 = 0;
+      num4 = 0;
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
 
 });
