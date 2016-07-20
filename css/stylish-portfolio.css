@@ -75,10 +75,10 @@ hr.small {
     position: fixed;
     right: 0;
     width: 250px;
-    height: 100%;
+    height: 43%;
     margin-right: -250px;
     overflow-y: auto;
-    background: rgba(166, 8, 16, 0.63);
+    background: rgba(166, 8, 16, 0.85);
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -ms-transition: all 0.4s ease 0s;
@@ -105,13 +105,14 @@ hr.small {
     text-decoration: none;
     color: #000;
     font-family: 'Oswald', sans-serif;
+    padding-top: 20px;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
     color: #fff;
-    background: rgba(0, 0, 0, 0.58);
+    
     display: inline-block;
     padding-right: 20px;
     transform:scale(1.5,1.5);
@@ -337,13 +338,16 @@ p.big {
 /* Portfolio */
 
 .portfolio {
-    padding: 30px 0;
+    padding: 30px 30px 30px 30px;
+
 }
 
 .portfolio-item {
     margin-bottom: 30px;
     padding: 20px;
-    
+    padding-left: 30px;
+    width: 350px;
+
 }
 
 .img-portfolio {
@@ -353,11 +357,28 @@ p.big {
     
     
 }
+.visible{
+
+    font-weight: 10px;
+  color: black;
+position: absolute;
+top: -45px;
+left: 55px;
+
+visibility: hidden;
+  opacity: 0; 
+}
 
 .img-portfolio:hover {
     opacity: 0.5;
     transform: scale(1.02,1.02);
+
     
+}
+.portfolio-item:hover .visible{
+    visibility: visible;
+  opacity: 1;
+  font-size: 30px;
 }
 #projectTitle{
     color: red;
@@ -384,6 +405,18 @@ p.big {
     border: 2px solid black;
     
 
+}
+#codeTitle{
+    color: red;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+#codeTitle2{
+    position: relative;
+    margin: -62px 0px 0px 0px;
+    color: black;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
 }
 /* ou to Action */
 
