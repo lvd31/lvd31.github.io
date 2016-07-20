@@ -28,18 +28,10 @@ function genRandom(){
 }
 
 $(document).ready(function(){
-	
-
-
-
-
-
-$("#popover").popover({ trigger: "hover" });
+	$("#popover").popover({ trigger: "hover" });
 $("#popover1").popover({ trigger: "hover" });
 $("#popover2").popover({ trigger: "hover" });
-
-
-	$(".callout").click(function(){
+$(".callout").click(function(){
 		$(".callout").slideUp(2000);
 	});
 
